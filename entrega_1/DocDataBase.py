@@ -7,7 +7,7 @@ import os
 from odf.opendocument import load
 from odf.text import P
 
-from constants import PINECONE
+from entrega_1.constants import PINECONE
 
 
 import os

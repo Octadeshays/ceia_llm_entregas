@@ -3,7 +3,7 @@ from langchain.chains import RetrievalQA
 from langchain.vectorstores import Pinecone
 from langchain.prompts import PromptTemplate
 from groq import Groq
-from DocDataBase import DocDataBase
+from entrega_1.DocDataBase import DocDataBase
 from langchain.memory import ConversationBufferMemory
 from langchain.schema import HumanMessage, AIMessage
 
@@ -98,3 +98,9 @@ class RAGDocQA:
             list: The conversation history as a list of messages.
         """
         return self.memory.load_memory_variables({})['chat_history']
+    
+    def clear_chat_history(self):
+        """
+        Clears the current conversation history.
+        """
+        self.memory.clear()
