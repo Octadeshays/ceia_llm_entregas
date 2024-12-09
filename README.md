@@ -28,6 +28,7 @@ The app processes `.odt` documents, indexes them, and uses a combination of retr
 ---
 
 # ENTREGA 2: Agent based RAG for multiple CV's
+![Solution Diagram](entrega_2/diagrama.png)
 
 ## Overview
 In this delivery, we extend the RAG Chatbot to handle multiple CVs using an agent-based approach. Each CV is treated as a separate agent, allowing for more organized and efficient retrieval and generation of answers.
